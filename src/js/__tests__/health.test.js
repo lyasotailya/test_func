@@ -6,7 +6,7 @@ test.each([
     [{name: 'лучник', health: 40}, 'wounded'],
     [{name: 'вор', health: -1}, ''],
 ])(
-(''),
+('should have signal health'),
 (pers, expected) => {
     const result = health(pers);
     expect(result).toBe(expected);
